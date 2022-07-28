@@ -7,8 +7,22 @@
     <title>Pokemon</title>
   </head>
   <body>
-    <main>
-      <h1>Pokemon List</h1>
+    <main class="pokemon">
+      <h1 class="text">Pokemon List</h1>
+      <form action="">
+        <div class="field nb-4">
+          <label for="name">Name</label><label for=""></label>
+          <input type="text" id="name" class="bg-yellow-100 p-2 ">
+        </div>
+        <div class="field nb-4">
+          <label for="ype">Type</label><label for=""></label>
+          <input type="text" id="type"  class="bg-yellow-100 p-2">
+        </div>
+        <button id="btn" class="bg-green-700 text-white px-6 py-2">Create New Pokemon</button>
+      
+      </form>
+      <div id="pokemon-list">
+      </div>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

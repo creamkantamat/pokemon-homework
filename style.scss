@@ -1,3 +1,223 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
+}
+body{
+  background-color: #f8f6fa;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ada6b9' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  height: 100vh;
+  margin: 50px 200px;
+}
+.pokemon {
+  background-color: white;
+}
+h1 {
+  padding: 15px;
+}
+
+#pokemon-list {
+  background-color: white;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-content: center;
+
+  .card { 
+    padding: 20px;
+    .poison {
+      background-color: purple;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .fire {
+      background-color: #ff1a00;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .grass {
+      background-color: #33CC33;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .flying {
+      background-color:  #909fb6;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .water {
+      background-color:  #337ae5;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .dragon {
+      background-color: #9e0f4c;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .bug {
+      background-color: #33d600;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .normal {
+      background-color: #a9a9a9;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .dark {
+      background-color: black;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .electric{
+      background-color: #FFFF00;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .psychic {
+      background-color: #FF3399;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .ice {
+      background-color: #33ccff;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .ground {
+      background-color: #CC9900;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .steel {
+      background-color: #669999;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .fairy {
+      background-color: #FF6699;
+      border-radius: 25px;
+      color: black;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .fighting {
+      background-color: #FF6600;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .rock {
+      background-color: #669900;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+    .ghost {
+      background-color: #b265d9;
+      border-radius: 25px;
+      color: white;
+      padding: 5px ;
+      margin: 2px;
+      width: 74px;
+      text-align: center;
+    }
+  }
+  .thumbnail-bg {
+    background-color:#bebebe;
+    border-radius: 10px;
+  }
+  .thumbnail-bg:hover {
+    cursor: pointer;
+    transform: matrix(1,0,0,1,10,-10);
+    opacity: 0.5;
+  }
+  .text-sm {
+    color: #a9a9a9;
+    font-size: small;
+  }
+  .flex {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+img {
+  height: 209px;
+  width: 209px;
+
+}
