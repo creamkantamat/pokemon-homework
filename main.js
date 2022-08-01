@@ -28,8 +28,8 @@ const btnCreatePokemon = document.getElementById("btn-create");
 if (btnCreatePokemon != null) {
   btnCreatePokemon.addEventListener("click",function () {
     const pokemonForm = document.getElementById('pokemon-form');
-    const name = pokemonForm.querySelector("name").value;
-    const type = pokemonForm.querySelector("type").value;
+    const name = pokemonForm.querySelector("#name").value;
+    const type = pokemonForm.querySelector("#type").value;
     const data = {
       name: name,
       type: [type],
