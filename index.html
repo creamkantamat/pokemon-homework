@@ -9,18 +9,24 @@
   <body>
     <main class="pokemon">
       <h1 class="text">Pokemon List</h1>
-      <form action="">
-        <div class="field nb-4">
-          <label for="name">Name</label><label for=""></label>
-          <input type="text" id="name" class="bg-yellow-100 p-2 ">
+    <div id="pokemon-form">
+      <div class="field nb-4">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="bg">
         </div>
         <div class="field nb-4">
-          <label for="ype">Type</label><label for=""></label>
-          <input type="text" id="type"  class="bg-yellow-100 p-2">
+          <label for="type">Type</label>
+          <select name="type" id="type" class="bg">
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="posion">posion</option>
+            <option value="earth">earth</option>
+          </select>
+         
         </div>
-        <button id="btn" class="bg-green-700 text-white px-6 py-2">Create New Pokemon</button>
-      
-      </form>
+        <button id="btn-create" class="btn-create">Create New Pokemon</button>
+     
+      </div>
       <div id="pokemon-list">
       </div>
     </main>
